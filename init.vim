@@ -256,10 +256,11 @@
     map <leader>x :vsplit<space>
 
 " Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
-    nnoremap <c-j> <c-w>j
-    nnoremap <c-k> <c-w>k
-    nnoremap <c-h> <c-w>h
-    nnoremap <c-l> <c-w>l
+" Breaks opening file from explorer
+"    nnoremap <c-j> <c-w>j
+"    nnoremap <c-k> <c-w>k
+"    nnoremap <c-h> <c-w>h
+"    nnoremap <c-l> <c-w>k
 
 " Resize split windows using arrow keys by pressing:
 " CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT.
@@ -277,8 +278,8 @@
 " Saving a file using CTRL+S
     map <C-S> :w<CR>
 
-" Quitting and saving a file using CTRL+S
-    map <C-q> :wq<CR>
+" Quit and save using CTRL+Q
+    map <C-Q> :wq!<CR>
 
 " Surround word with a wanted character
     nnoremap <leader>sw <cmd>echo "Press a character: " \| let c = nr2char(getchar()) \| exec "normal viwo\ei" . c . "\eea" . c . "\e" \| redraw<CR>
