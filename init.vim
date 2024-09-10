@@ -44,9 +44,9 @@
 
     colorscheme slate 
 
-    set cursorline
-
-    set cursorcolumn
+" Turn off if performance is impacted
+    "set cursorline
+    "set cursorcolumn
 
     set shiftwidth=4 expandtab
     set tabstop=4 expandtab
@@ -108,7 +108,7 @@
 " Auto Completion - Enable Omni complete features
     set omnifunc=syntaxcomplete#Complete
 
-    " Enable Spelling Suggestions for Auto-Completion:
+" Enable Spelling Suggestions for Auto-Completion:
     set complete+=k
     set completeopt=menu,menuone,noinsert
 
